@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/529068a966.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main class="font-sans gap-36 md:gap-20 mt-36 md:mt-20">
+      <article
+        class="flex flex-col items-center gap-20 md:gap-10 text-center px-6 mx-auto mb-20"
+      >
+        <img src="./images/logo.svg" class="w-28 md:w-20" alt="" />
+        <div>
+          <h1 class="text-5xl text-body font-light mb-8 md:mb-4">
+            We are launching <span class="font-bold text-heading">soon!</span>
+          </h1>
+          <p class="text-heading text-2xl md:text-xl">
+            Subscribe and get notified
+          </p>
+        </div>
+        <div
+          class="w-full flex flex-col gap-4 md:flex-row items-stretch md:max-w-2xl"
+        >
+          <div id="input-container" class="relative w-full">
+            <input
+              type="text"
+              class="border-2 py-6 px-14 w-full placeholder:opacity-60 placeholder:text-xl outline-none border-secondary rounded-full md:placeholder:text-lg md:py-4 md:px-8"
+              id="input"
+              placeholder="Your email address..."
+              onkeydown="changeHandler()"
+            />
+            <p
+              id="err-msg"
+              class="hidden md:text-sm md:left-[35%] absolute bottom-0 text-error/60 text-lg font-semibold left-[50%] -translate-x-[50%] whitespace-nowrap md:-bottom-6"
+            >
+              Please provide a valid email address
+            </p>
+          </div>
+          <button
+            id="btn"
+            class="bg-primary text-white font-semibold text-2xl p-6 w-full rounded-full md:w-auto whitespace-nowrap md:px-16 md:text-lg md:py-4 hover:bg-primary/80 hover:shadow-lg hover:shadow-primary/40 transition duration-150"
+          >
+            Notify Me
+          </button>
+        </div>
+      </article>
+      <img
+        src="./images/illustration-dashboard.png"
+        class="w-full md:max-w-2xl mx-auto object-cover px-6"
+        alt=""
+      />
+      <footer class="flex flex-col items-center mt-36 gap-10 md:gap-6 md:mt-20">
+        <div class="flex gap-6 md:gap-4">
+          <div
+            class="group w-16 h-16 md:w-10 md:h-10 bg-white border border-primary/30 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary transition duration-200"
+          >
+            <i
+              class="fa-brands fa-facebook-f text-primary text-3xl md:text-base group-hover:text-white transit duration-200"
+            ></i>
+          </div>
+          <div
+            class="group w-16 h-16 md:w-10 md:h-10 bg-white border border-primary/30 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary transition duration-200"
+          >
+            <i
+              class="fa-brands fa-twitter text-primary text-3xl md:text-base group-hover:text-white transit duration-200"
+            ></i>
+          </div>
+          <div
+            class="group w-16 h-16 md:w-10 md:h-10 bg-white border border-primary/30 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary transition duration-200"
+          >
+            <i
+              class="fa-brands fa-instagram text-primary text-3xl md:text-base group-hover:text-white transit duration-200"
+            ></i>
+          </div>
+        </div>
+        <span class="text-body text-xl md:text-sm"
+          >&copy; Copyright Ping. All rights reserved</span
+        >
+      </footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!--  We are launching soon!
+
+  Subscribe and get notified
+
+  Notify Me
+
+  &copy; Copyright Ping. All rights reserved.
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
